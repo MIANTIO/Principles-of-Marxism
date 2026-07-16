@@ -12,13 +12,14 @@ NUIST 马克思主义基本原理题库与离线刷题网页。
 
 支持随机练习、题库搜索、即时判分、错题本、收藏、学习统计、模拟考试、深色模式以及手机屏幕适配。学习记录只保存在浏览器本地，不会上传。
 
+### GitHub Pages
+
+点开即可使用
+https://miantio.github.io/Principles-of-Marxism/
+
 ### 本地使用
 
 下载仓库后，使用 Edge 或 Chrome 打开 `index.html`。
-
-### GitHub Pages
-
-在仓库 Settings → Pages 中选择 `Deploy from a branch`，分支选择 `main`、目录选择 `/ (root)`，即可发布为在线静态网页。发布后仍不需要后端服务。
 
 ## 原始资料
 
