@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174a72">
+  <title>马原研习室</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">马</span>
+        <div><strong>马原研习室</strong><small>离线题库 · NUIST</small></div>
+      </div>
+      <nav class="nav-list" aria-label="主导航">
+        <button class="nav-item active" data-route="home"><span class="nav-icon">⌂</span>学习概览</button>
+        <button class="nav-item" data-route="bank"><span class="nav-icon">▤</span>浏览题库</button>
+        <button class="nav-item" data-route="wrong"><span class="nav-icon">↻</span>错题回顾 <span class="nav-count" id="wrongNavCount">0</span></button>
+        <button class="nav-item" data-route="favorite"><span class="nav-icon">☆</span>我的收藏 <span class="nav-count" id="favoriteNavCount">0</span></button>
+        <button class="nav-item" data-route="exam"><span class="nav-icon">◷</span>模拟考试</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <button class="nav-item" data-route="settings"><span class="nav-icon">⚙</span>数据与设置</button>
+        <div class="offline-badge"><span></span>数据仅保存在本机</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menuButton" aria-label="打开菜单">☰</button>
+        <div class="top-title" id="topTitle">学习概览</div>
+        <div class="top-actions">
+          <span class="date-label" id="dateLabel"></span>
+          <button class="icon-button" id="themeButton" aria-label="切换深浅主题" title="切换深浅主题">◐</button>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <div class="modal-root" id="modalRoot"></div>
+  <script src="data/questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
